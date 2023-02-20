@@ -1,39 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&display=swap");
 
 .Reply_div {
   border-top: solid 1px #ababab;
   margin-top: 40px;
 }
 
+/* 후기 */
 .Reply_div h3 {
   margin-top: 40px;
-  margin-left: 30px;
-  font-family: "Black Han Sans", sans-serif;
-  font-size: 25px;
+  margin-left: 60px;
+  font-family: "Jua", sans-serif;
+  font-size: 22px;
 }
 
-.Review_Profile {
+/* .Review_Profile {
   margin-left: 30px;
   width: 50px;
   height: 50px;
   object-fit: cover;
-}
+} */
 
-.Reply_div .Star_ratings span {
-  margin-top: 50px;
-  margin-left: 30px;
-  color: #aaa9a9;
-  cursor: pointer;
-  position: relative;
-  /* unicode-bidi: bidi-override; */
-  width: max-content;
-  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1.3px;
-  -webkit-text-stroke-color: #2b2a29;
-}
-
+/* 리뷰 상단 별점 */
 .Star_ratings {
-  /* margin-left: 300px; */
   text-align: center;
 }
 
@@ -42,13 +30,17 @@
   height: auto;
   width: 30px;
   margin-left: 5px;
-  /* display: block;
-  margin: 0px auto;
-  text-align: center; */
-  /* display: inline-block;
-  width: 120px;
-  height: 24px;
-  background-size: 120px auto; */
+}
+
+/* 리뷰 상단 평점 */
+.Star_ratings .present_ratings {
+  /* margin-left: 300px; */
+  /* text-align: center; */
+  display: inline-block; /* 한줄에 요소 배치 */
+}
+
+.present_ratings h3 {
+  text-align: center;
 }
 
 /* .Reply_div .present_ratings {
@@ -63,8 +55,11 @@
   /* border-bottom: solid 1px #ababab; */
 }
 
+/* 작성된 후기가 없습니다. */
 .Reply_div .Reply_write h5 {
   margin-top: 50px;
+  font-size: 16px;
+  margin-left: 40px;
 }
 
 .Reply_div .Reply_write textarea {
@@ -77,6 +72,7 @@
   font-size: large;
 }
 
+/* 등록 버튼 */
 .reply_submit_button {
   position: absolute;
   width: 7%;
@@ -88,33 +84,61 @@
   font-size: large;
 }
 
+/* 리뷰 리스트 */
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style: none; /* 불릿 없애기 */
+}
+
 .Reply_list {
-  width: 100%;
-  height: 250px;
+  width: 95%;
+  height: 265px;
   border-top: solid 1px #ababab;
   border-bottom: solid 1px #ababab;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: 10px;
+  /* padding-left: auto;
+  padding-right: auto; */
 }
 
-/* .Reply_list h4 {
-  margin-left: 30px;
-}
-
-.Reply_list h5 {
-  margin-left: 120px;
-  margin-top: 30px;
-} */
-
-.Reply_write .Reply_list strong {
-  padding-top: 30px;
-  padding-right: 16px;
-  padding-bottom: 2px;
+.Reply_list strong {
   padding-left: 64px;
-  font-size: large;
+  font-size: 20px;
 }
 
-.Score_list .Score_star {
+/* 리스트 내부 별 */
+.Score_list .Score_star img {
+  width: auto;
+  height: auto;
+  width: 20px;
+  margin-left: 5px;
 }
-/* 
-.Star_score .Score_num {
-  padding-left: 100px;
-} */
+
+.Score_list .Score_star span {
+  /* background-color: #2b2a29; */
+  padding-left: 58px;
+}
+
+.Score_list .Score_num {
+  /* background-color: aqua; */
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.Reply_list .Reply_user {
+  font-size: 20px;
+  padding-left: 64px;
+  /* margin-top: 5px; */
+}
+
+.Reply_content {
+  /* background-color: aquamarine; */
+  width: 1600px;
+  height: 150px;
+  margin-left: 64px;
+  margin-top: 10px;
+  position: relative;
+}
